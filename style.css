@@ -99,6 +99,7 @@ padding: 4em;
 
 .stat-copy{
     color: #949494;
+    padding: 0 1em;
 }
 
 .card{
@@ -169,10 +170,43 @@ padding: 2em;
     background: linear-gradient(120deg,
     rgba(70, 70, 70, 0.3) 0%,
     rgba(70, 70, 70, 0.3) 50%,
-    rgba(102, 185, 165, 0.2) 100%,
+    rgba(102, 185, 165, 0.2) 100%
     );
     padding: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.card-col{
+    /* font-family: sans-serif; */
+    font-weight: 300;
+    opacity: 0.7;
+    line-height: 1.8em;
+}
+
+.card-title{
+    font-size: 12px;
+}
+
+@media(max-width:900px) {
+    .nav-links{
+ display: none;
+    }
+    .content{
+     flex-direction: column;
+    }
+    .col{
+     width: 100%;
+    }
+    .header{
+     font-size: 2em;
+    }
+    .card{
+     top: 0;
+     left: 0;
+    }
+    .card-balance{
+     top: 0;
+    }
+   }
